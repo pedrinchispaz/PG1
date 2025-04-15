@@ -20,5 +20,11 @@ Recoleccion de datos:
 1 + 2
 
 "Hola como le va"
+<<<<<<< HEAD
 "bastante mal"
+=======
+
+
+"SDAADSDASDSA"
+>>>>>>> b6cc9c860bb50b6c69c6748f1987a5fbada66e4d
 ```
