@@ -16,9 +16,9 @@ Recoleccion de datos:
 1 + 1
 ```
 
-
 ```{r}
 1 + 2
 
 "Hola como le va"
+"bastante mal"
 ```
