@@ -19,4 +19,6 @@ Recoleccion de datos:
 
 ```{r}
 1 + 2
+
+"Hola como le va"
 ```
