@@ -1,0 +1,17 @@
+---
+title: "Tabla de datos"
+format: html
+editor: visual
+---
+
+## PG1 Proyecto final
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Objetivos:
+
+Recoleccion de datos:
+
+```{r}
+1 + 1
+```
