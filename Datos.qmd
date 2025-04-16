@@ -1,5 +1,74 @@
-Aca se colocaran todos los datos a base de
+Aca se colocaran todos los datos a base de la recoleccion que nosotros mismos haremos (no es encuesta)
 
 ```{r}
-Datos<-c(2,1)
+Datos <- data.frame(
+  VelS = NA,
+  VelB = NA,
+  Amb = NA,
+  Piso = NA,
+  Dia = NA,
+  Turno = NA,
+  Nrep = NA,
+  CUC = NA,
+  CB = NA,
+  Lat = NA,
+  Act = NA
+)
 ```
+
+```{r}
+# Variables específicas
+Velocidaddesubida <- 100
+Velocidaddebajada <- 120
+Ambiente <- "Auditorio"
+Piso_ <- 1
+Dia_ <- "Lunes"
+Turno_ <- "Dia"
+NRepetidores <- 3
+CUsuariosConectados <- 40
+Cantidaddebarras <- 3
+Latencia <- 10
+Actividad <- "Descarga"
+
+# Crear el nuevo dato con nombres abreviados
+Nuevo_dato <- data.frame(
+  VelS = Velocidaddesubida,
+  VelB = Velocidaddebajada,
+  Amb = Ambiente,
+  Piso = Piso_,
+  Dia = Dia_,
+  Turno = Turno_,
+  Nrep = NRepetidores,
+  CUC = CUsuariosConectados,
+  CB = Cantidaddebarras,
+  Lat = Latencia,
+  Act = Actividad
+)
+
+# Verificar
+print(Nuevo_dato)
+
+#Ejecuta y verifica que esten los datos correctamente puestos
+
+```
+
+Ejecutar el siguiente codigo para añadir la fila a la tabla:
+
+```{r}
+Datos <- rbind(Datos, Nuevo_dato)
+
+Datos
+#Ejecutar y verificar
+```
+
+Si la fila esta mal, ejecuta el siguiente codigo para eliminar la fila que quieras:
+
+```{r}
+Numerodefila<-2
+Datos <- Datos[-(Numerodefila), ]
+Datos
+```
+
+ctrl+s para guardar cambios, y en la pestaña git hacer commit para enviar los cambios a github
+
+Luego presionar Push en la barra dentro de git
