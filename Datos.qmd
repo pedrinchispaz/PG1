@@ -16,6 +16,8 @@ Datos <- data.frame(
 )
 ```
 
+Colocar los datos respectivamente (usar variables especificas)
+
 ```{r}
 # Variables específicas
 Velocidaddesubida <- 100
@@ -30,7 +32,7 @@ Cantidaddebarras <- 3
 Latencia <- 10
 Actividad <- "Descarga"
 
-# Crear el nuevo dato con nombres abreviados
+# Subir los datos con respecto a las variables de la tabla
 Nuevo_dato <- data.frame(
   VelS = Velocidaddesubida,
   VelB = Velocidaddebajada,
