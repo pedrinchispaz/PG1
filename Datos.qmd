@@ -1,0 +1,5 @@
+Aca se colocaran todos los datos a base de
+
+```{r}
+Datos<-c(2,1)
+```
