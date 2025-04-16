@@ -1,76 +1,83 @@
-Aca se colocaran todos los datos a base de la recoleccion que nosotros mismos haremos (no es encuesta)
+**1.1 RELEVANCIA**
 
-```{r}
-Datos <- data.frame(
-  VelS = NA,
-  VelB = NA,
-  Amb = NA,
-  Piso = NA,
-  Dia = NA,
-  Turno = NA,
-  Nrep = NA,
-  CUC = NA,
-  CB = NA,
-  Lat = NA,
-  Act = NA
-)
+La presente investigación se llevará a cabo con el objetivo de diagnosticar la calidad de la red Wi-Fi en la Universidad de Ingeniería y Tecnología del Perú (UTEC). La investigación surge en consecuencia de la escasez de información y estudios realizados con anterioridad respecto a la red inalámbrica, a pesar que, una cantidad significativa de estudiantes lo emplean diariamente. Asimismo, la investigación también tiene la finalidad de captar la atención de los especialistas involucrados en el mantenimiento y gestión de la red Wi-Fi, debido a que se está tomando en cuenta aspectos fundamentales para su óptimo funcionamiento y variables que miden su aprobación. 
+
+**1.2planificación:**
+
+**1.3. OBJETIVOS**
+
+**1.3.1. OBJETIVO GENERAL:**
+
+Identificar los factores que influyen en la calidad de la conexión a internet en diferentes ambientes de la UTEC durante el periodo académico 2025-I.
+
+**1.3.1. OBJETIVOS ESPECÍFICOS:**
+
+1.  Identificar las áreas de la UTEC con menor cobertura de internet durante el periodo académico 2025-I.
+
+2.  Determinar los momentos del día con mayor fluctuación y menor velocidad de subida y bajada del Wi-Fi en la UTEC durante el periodo académico 2025-I.
+
+**2. DATOS**
+
+**2.1 población objetivo**
+
+La población objetivo de esta investigación incluye las áreas y ambientes dentro de la UTEC durante el periodo académico 2025-I, tales como aulas, áreas comunes, laboratorios y otros espacios de uso estudiantil. Las unidades muestrales abarcarán tanto las zonas con diferentes momentos del día (mañana, tarde y noche) para evaluar la variabilidad en la calidad de la conexión a internet, considerando también la cantidad de dispositivos conectados. Para asegurar la representatividad de la muestra, se seleccionarán áreas representativas del campus y se realizarán mediciones en diversos horarios, capturando tanto picos de demanda como momentos de baja actividad, utilizando herramientas de monitoreo para obtener datos que reflejen las condiciones de conexión en toda la universidad.
+
+**2.2 tipo de muestreo**
+
+Aca se colocaran todos los datos a base de la recoleccion que nosotros mismos haremos
+
+```{r} Datos <- data.frame(   VelS = NA,   VelB = NA,   Amb = NA,   Piso = NA,   Dia = NA,   Turno = NA,   Nrep = NA,   CUC = NA,   CB = NA,   Lat = NA,   Act = NA )}
 ```
 
 Colocar los datos respectivamente (usar variables especificas)
 
-```{r}
-# Variables específicas
-Velocidaddesubida <- 100
-Velocidaddebajada <- 120
-Ambiente <- "Auditorio"
-Piso_ <- 1
-Dia_ <- "Lunes"
-Turno_ <- "Dia"
-NRepetidores <- 3
-CUsuariosConectados <- 40
-Cantidaddebarras <- 3
-Latencia <- 10
-Actividad <- "Descarga"
-
-# Subir los datos con respecto a las variables de la tabla
-Nuevo_dato <- data.frame(
-  VelS = Velocidaddesubida,
-  VelB = Velocidaddebajada,
-  Amb = Ambiente,
-  Piso = Piso_,
-  Dia = Dia_,
-  Turno = Turno_,
-  Nrep = NRepetidores,
-  CUC = CUsuariosConectados,
-  CB = Cantidaddebarras,
-  Lat = Latencia,
-  Act = Actividad
-)
-
-# Verificar
-print(Nuevo_dato)
-
-#Ejecuta y verifica que esten los datos correctamente puestos
-
+```{r} # Variables específicas Velocidaddesubida <- 100 Velocidaddebajada <- 120 Ambiente <- "Auditorio" Piso_ <- 1 Dia_ <- "Lunes" Turno_ <- "Dia" NRepetidores <- 3 CUsuariosConectados <- 40 Cantidaddebarras <- 3 Latencia <- 10 Actividad <- "Descarga"  # Subir los datos con respecto a las variables de la tabla Nuevo_dato <- data.frame(   VelS = Velocidaddesubida,   VelB = Velocidaddebajada,   Amb = Ambiente,   Piso = Piso_,   Dia = Dia_,   Turno = Turno_,   Nrep = NRepetidores,   CUC = CUsuariosConectados,   CB = Cantidaddebarras,   Lat = Latencia,   Act = Actividad )  # Verificar print(Nuevo_dato)  #Ejecuta y verifica que esten los datos correctamente puestos}
 ```
 
 Ejecutar el siguiente codigo para añadir la fila a la tabla:
 
-```{r}
-Datos <- rbind(Datos, Nuevo_dato)
-
-Datos
-#Ejecutar y verificar
+```{r} Datos <- rbind(Datos, Nuevo_dato)  Datos #Ejecutar y verificar}
 ```
 
 Si la fila esta mal, ejecuta el siguiente codigo para eliminar la fila que quieras:
 
-```{r}
-Numerodefila<-2
-Datos <- Datos[-(Numerodefila), ]
-Datos
+```{r} Numerodefila<-2 Datos <- Datos[-(Numerodefila), ] Datos}
 ```
 
-ctrl+s para guardar cambios, y en la pestaña git hacer commit para enviar los cambios a github
+**2.3 recolección de datos**
 
-Luego presionar Push en la barra dentro de git
+Se usarán dos herramientas digitales para la recolección de datos, "Speedtest" y "Forms". En primer lugar, la aplicación "Speedtest" de Ookla permitirá la recopilación de datos relacionados a las estadísticas de la red Wi-Fi. En segundo lugar, se utilizará un formulario "Forms" de Google para el registro de todos los datos recolectados, tanto  relacionados con las mediciones (velocidad de subida y bajada, latencia, etc.), como  complementarios (aforo, turno, etc.).
+
+**2.4 variables**
+
+velocidad de subida-cuantitativa continua
+
+velocidad de bajada-cuantitativa continua
+
+ambiente-cualitativa nominal 
+
+piso-cualitativa ordinaria
+
+dia-cualitativa nominal
+
+turno-cuantitativa nominal
+
+número de repetidores-cuantitativa discreta
+
+cantidad de usuarios conectados-cuantitativa continua
+
+cantidad de barras-cualitativa nominal
+
+latencia- cuantitativa continua
+
+actividad-cuantitativa discreta
+
+**2.5 limpieza**
+
+**3 analisis descriptivo**
+
+**3.1 analisis unitario**
+
+**3.2 analisis de interacción**
+
+**4 conclusiones**
